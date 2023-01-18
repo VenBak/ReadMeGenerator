@@ -1,18 +1,23 @@
-var prompt = require('prompt');
+const inquirer = require('inquirer');
+const fs = require('fs');
 
-  //
-  // Start the prompt
-  //
-  prompt.start();
+const generateReadMe = ({ title}) =>
+"#Title ${title}"
 
-  //
-  // Get two properties from the user: username and email
-  //
-  prompt.get(['username', 'email'], function (err, result) {
-    //
-    // Log the results.
-    //
-    console.log('Command-line input received:');
-    console.log('  username: ' + result.username);
-    console.log('  email: ' + result.email);
+inquirer
+  .prompt([{ 
+    type: "input",
+    name: "title",
+    message: "What is the title of your project",
+  },
+
+  ])
+  .then((answers) => {
+    const ReadMeContent = generateReadMe(answers)
+
+    fs.writeFile('ReadMe.md', ReadMeContent, (err) =>
+    err ? console.error(err) : console.log('Successfully created Read Me file!')
+    );
   });
+
+// Pass in the inputs into the readme file
