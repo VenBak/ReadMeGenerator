@@ -1,40 +1,42 @@
-# readmegenerator
+
+[![License: unlicense](https://img.shields.io/badge/License-unlicense-blue.svg)](https://opensource.org/licenses/unlicense)
+# cc
 
 ## Description
 
-It is a command line interface that allows you t ocreate a quality readme file
+c
 
 ## Table of Contents
 
 - [Description](#description)
 - [Installation](#installation)
 - [License](#license)
-- [Contributions](#contributions)
+- [Contributing](#contributing)
 - [Usage](#usage)
 - [Test](#test)
-- [Contact](#contact)
+- [Questions](#questions)
 
 ## Installation
 
-type node index.js
+c
 
 ## License
 
-MIT
+This applicaiton is covered under the unlicense license.
 
-## Contributions
+## Contributing
 
-please dont
+c
 
 ## Usage
 
-you have to install the  node  extenstin
+c
 
 ## Test
 
-npm test
+c
 
-## Contact
+## Questions
 
-If you wish to perhaps get in touch with me you can contact me via my email address: andre.brahin@gmail.com .
-Or you can get in touch with me through my GitHub account: VenBak
+If you wish have any questions you can get in touch with me via my email address: c.
+Or you can get in touch with me through my GitHub account: [c](https://github.com/c)

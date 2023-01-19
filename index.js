@@ -2,7 +2,9 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateReadMe = ({title, description, installation, license, contribution, usage, test, username, email}) =>
-`# ${title}
+`
+[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
+# ${title}
 
 ## Description
 
@@ -13,10 +15,10 @@ ${description}
 - [Description](#description)
 - [Installation](#installation)
 - [License](#license)
-- [Contributions](#contributions)
+- [Contributing](#contributing)
 - [Usage](#usage)
 - [Test](#test)
-- [Contact](#contact)
+- [Questions](#questions)
 
 ## Installation
 
@@ -24,9 +26,9 @@ ${installation}
 
 ## License
 
-${license}
+This applicaiton is covered under the ${license} license.
 
-## Contributions
+## Contributing
 
 ${contribution}
 
@@ -38,10 +40,10 @@ ${usage}
 
 ${test}
 
-## Contact
+## Questions
 
-If you wish to perhaps get in touch with me you can contact me via my email address: ${email} .
-Or you can get in touch with me through my GitHub account: ${username}
+If you wish have any questions you can get in touch with me via my email address: ${email}.
+Or you can get in touch with me through my GitHub account: [${username}](https://github.com/${username})
 `
 
 inquirer
@@ -58,9 +60,10 @@ inquirer
     name: "installation",
     message: "What are the instructions to install the project ?",
   },{ 
-    type: "input",
+    type: "list",
     name: "license",
     message: "Which license do you wish to use ?",
+    choices: ["MIT", "GPL-3.0", "ISC", "Apache-2.0", "MPL-2.0", "unlicense"],
   }, { 
     type: "input",
     name: "contribution",
