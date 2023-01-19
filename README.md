@@ -36,6 +36,8 @@ If you have already installed the repository and node. Open the repository insid
 `node index.js` to run the file and voila
 `_* Magic`
 
+![alt text](./Screenshot%202023-01-19%20at%205.50.43%20PM.png)
+
 ## Test
 
 I haven't added any test features for this project
