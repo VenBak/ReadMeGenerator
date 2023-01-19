@@ -63,7 +63,7 @@ inquirer
     type: "list",
     name: "license",
     message: "Which license do you wish to use ?",
-    choices: ["MIT", "GPL-3.0", "ISC", "Apache-2.0", "MPL-2.0", "unlicense"],
+    choices: ["MIT", "GPL", "ISC", "Apache", "MPL", "unlicense"],
   }, { 
     type: "input",
     name: "contribution",
